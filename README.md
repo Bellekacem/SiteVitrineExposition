@@ -25,14 +25,14 @@ Ce projet présente une application de gestion des collections de maillots de fo
    symfony composer install
    symfony server:start
 
-					## Accès au projet  
+### Accès au projet  
 
 Pour accéder à l'application et découvrir ses fonctionnalités, rendez-vous sur :  
 http://localhost:8000/login  
 
 --------------------------------------------------------------------------------------------------------------------------------
 
-					### Comptes de test  
+### Comptes de test  
 
 - **Compte administrateur** :  
   - Identifiant : `belkacem@localhost`  
@@ -47,7 +47,7 @@ http://localhost:8000/login
 
 --------------------------------------------------------------------------------------------------------------------------------
 
-					### Règles d'accès  
+### Règles d'accès  
 
 
 - Un **membre** peut :  
@@ -62,12 +62,12 @@ http://localhost:8000/login
 
 
 
-					### Recommandation  
+### Recommandation  
 
 Pour apprécier les fonctionnalités évoquées, utilisez les comptes de test mentionnés ci-dessus.  
 
 --------------------------------------------------------------------------------------------------------------------------------
-					## Nomenclature utilisée  
+## Nomenclature utilisée  
 
 - **[objet]** : Maillot de Football  
 - **[inventaire]** : Armoire  
@@ -76,7 +76,7 @@ Pour apprécier les fonctionnalités évoquées, utilisez les comptes de test me
 
 --------------------------------------------------------------------------------------------------------------------------------
 
-				## Définition des propriétés à gérer  
+## Définition des propriétés à gérer  
 
 ### **Entité : Armoire (Inventaire)**  
 | Nom de propriété | Type    | Contraintes  |  
