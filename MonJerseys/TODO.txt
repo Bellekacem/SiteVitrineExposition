@@ -1,0 +1,111 @@
+NOM : KETIR  
+Prénom : Si-Belkacem  
+
+TODO List pour le Projet Symfony "Collection de Maillots" (myjerseys)  
+
+---
+
+### 1. Création du Projet Symfony  
+   - Initialiser un nouveau projet Symfony.  
+
+---
+
+### 2. Mise en Place des Entités  
+   - Créer les entités **"objet"** et **"inventaire"** correspondantes aux entités **"Maillot"** et **"Armoire"**.  
+
+---
+
+### 3. Définition des Propriétés à Gérer pour les Entités  
+
+#### **Entité : Armoire (Inventaire)**  
+   - **Nom de propriété** | **Type**   | **Contraintes**  
+      - Description        | String    | NotNull  
+      - Propriétaire       | String    | NotNull  
+
+#### **Entité : Maillot de Football (Objet)**  
+   - **Nom de propriété** | **Type**   | **Contraintes**  
+      - Description        | String    | NotNull  
+      - Club               | String    | NotNull  
+      - Joueur             | String    | NotNull  
+      - Numéro             | Integer   | NotNull  
+
+---
+
+### 4. Création de la Base de Données  
+   - Mettre en place les **fixtures** pour charger des données de test.  
+   - Définir l'association entre les entités :  
+      - **Armoire (1)** — **Maillot (0..n)**.  
+
+---
+
+### 5. Développement de la Liste des Inventaires  
+   - Créer une liste d'armoires affichée via une page HTML brute.  
+   - Implémenter la consultation de chaque armoire et de ses maillots via des contrôleurs Symfony.  
+
+---
+
+### 6. Intégration des Gabarits (Templates Twig)  
+   - Supprimer les pages HTML brutes et intégrer des **gabarits Twig** pour une meilleure présentation.  
+   - Ajouter la consultation des maillots d’une armoire et permettre l’accès à un maillot individuel via un lien sur la page de l’inventaire.  
+   - Utiliser la commande `make:crud` pour générer le contrôleur et les vues associées à l’entité **Maillot**.  
+
+---
+
+### 7. Poursuite du Développement (TP6)  
+   - Continuer à développer les fonctionnalités avancées en fonction des étapes de la séance TP6.  
+   - Ajouter des ajustements aux contrôleurs et entités pour répondre aux besoins spécifiques du projet.  
+
+---
+
+### 8. Ajout de l’Entité 'Membre'  
+   - Créer l’entité **Member** pour représenter les utilisateurs du système.  
+   - Associer chaque **Member** à une **Armoire** via une relation **One-To-One**.  
+   - Propriétés gérées :  
+      - **Nom de propriété** | **Type**   | **Contraintes**  
+         - email             | String    | NotNull  
+         - password          | String    | NotNull  
+         - armoire_id        | Integer   | NotNull  
+         - roles             | String    | NotNull  
+
+---
+
+### 9. Contrôles d’Accès aux Données  
+   - Restreindre l'accès aux armoires et maillots pour que seuls les propriétaires puissent consulter ou modifier leurs données.  
+   - Ajouter des contrôles spécifiques dans les contrôleurs :  
+      - Les administrateurs ont un accès complet à toutes les données.  
+      - Les utilisateurs standards peuvent consulter et modifier uniquement leurs données.  
+
+---
+
+### 10. Ajout de Données de Test avec Fixtures  
+   - Créer des fixtures pour :  
+      - Membres (administrateurs et utilisateurs).  
+      - Armoires et leurs maillots associés.  
+   - Charger les données de test dans la base pour vérifier les fonctionnalités.  
+
+---
+
+### 11. Intégration de CSS pour le Front-End  
+   - Ajouter une mise en page responsive avec **Bootstrap**.  
+   - Améliorer l’affichage des listes (armoires, maillots) et des détails pour une meilleure expérience utilisateur.  
+
+---
+
+### 12. Authentification des Utilisateurs  
+   - Implémenter un système d’authentification avec login/logout.  
+   - Protéger les routes sensibles pour empêcher un accès non autorisé.  
+
+---
+
+### 13. Gestion Avancée des Rôles et Permissions  
+   - Ajouter des rôles spécifiques :  
+      - **ROLE_ADMIN** : Accès total.  
+      - **ROLE_USER** : Accès restreint aux données personnelles.  
+   - Protéger les actions (ajout, modification, suppression) avec des contrôles basés sur les rôles.  On peut voir ses propres galeries non publiées. Et l'admin peut tout faire. 
+
+---
+
+### 14. Finalisation et Tests  
+   - Tester toutes les fonctionnalités, y compris les contrôles d'accès et l’authentification.  
+   - Vérifier les cas limites (par exemple, accès non autorisé).  
+---
