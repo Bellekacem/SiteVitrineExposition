@@ -8,18 +8,22 @@ Ce projet présente une application de gestion des collections de maillots de fo
 - Le numéro du maillot.  
 
 **Remarque** : Les clubs des joueurs peuvent évoluer au fil du temps. Par exemple, un maillot de Cristiano Ronaldo peut être associé à Manchester United, même si ce dernier joue actuellement pour Al-Nassr.  
+---
 
---------------------------------------------------------------------------------------------------------------------------------
-Première utilisation du prpojet : 
+## Première utilisation du projet
 
+### Installation
 
-cd MonJerseys/
+1. Accédez au répertoire du projet :
 
-Testez que composer peut télécharger toutes les dépendances et que l'application Symfony se lance :
-
-rm -fr composer.lock symfony.lock vendor/ var/cache/
-symfony composer install
-symfony server:start
+   ```bash
+   cd MonJerseys/
+2. Testez que Composer peut télécharger toutes les dépendances et que l'application Symfony se lance :
+   
+   ```bash
+   rm -fr composer.lock symfony.lock vendor/ var/cache/
+   symfony composer install
+   symfony server:start
 
 					## Accès au projet  
 
