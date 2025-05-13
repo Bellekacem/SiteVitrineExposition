@@ -1,14 +1,15 @@
---------------------------------------------------------------------------------------------------------------------------------
 
-					# Collection de Maillots de Football  
+# Collection de Maillots de Football  
 
 Ce projet présente une application de gestion des collections de maillots de football contenus dans les vestiaires de différents supporters. Chaque maillot est associé à des informations détaillées telles que :  
 - Le nom du joueur.  
 - Le club auquel il appartient.  
 - Le numéro du maillot.  
 
-**Remarque** : Les clubs des joueurs peuvent évoluer au fil du temps. Par exemple, un maillot de Cristiano Ronaldo peut être associé à Manchester United, même si ce dernier joue actuellement pour Al-Nassr.  
----
+*Remarque* : Les clubs des joueurs peuvent évoluer au fil du temps. Par exemple, un maillot de Cristiano Ronaldo peut être associé à Manchester United, même si ce dernier joue actuellement pour Al-Nassr.  
+
+
+
 
 ## Première utilisation du projet
 
@@ -42,8 +43,8 @@ http://localhost:8000/login
   - Identifiant : `olivier@localhost`  
   - Mot de passe : `123456`  
 
--**Compte visiteur** : 
- -Dans la barre de menu 
+- **Compte visiteur** : 
+  Dans la barre de menu 
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -54,11 +55,10 @@ http://localhost:8000/login
   - Modifier uniquement sa propre fiche utilisateur.  
   - Voir uniquement ses vestiaires non publiés dans l'onglet "Liste des Vestiaires" ainsi que dans sa fiche personnelle. Ajouter    un vestiaire non public pour le constater.  
 
-- L'**administrateur** :  
-  - A accès à toutes les informations et peut tout modifier sans restriction.  
+- L'**administrateur** :   A accès à toutes les informations et peut tout modifier sans restriction.  
 
--Visiteur : 
- -Peut simplement faire de la consultation partout. Cliquer sur "membre" dans la page d'accueil. 
+- **Visiteur** : 
+  Peut simplement faire de la consultation partout. Cliquer sur "membre" dans la page d'accueil. 
 
 
 
