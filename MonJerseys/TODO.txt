@@ -1,5 +1,3 @@
-NOM : KETIR  
-Prénom : Si-Belkacem  
 
 TODO List pour le Projet Symfony "Collection de Maillots" (myjerseys)  
 
